@@ -95,6 +95,7 @@
             this.btnEquals.TabIndex = 27;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnPlus
             // 
@@ -105,6 +106,7 @@
             this.btnPlus.TabIndex = 28;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnPlusMinus
             // 
@@ -115,6 +117,7 @@
             this.btnPlusMinus.TabIndex = 29;
             this.btnPlusMinus.Text = "+/-";
             this.btnPlusMinus.UseVisualStyleBackColor = true;
+            this.btnPlusMinus.Click += new System.EventHandler(this.btnPlusMinus_Click);
             // 
             // btnPercent
             // 
@@ -125,6 +128,7 @@
             this.btnPercent.TabIndex = 34;
             this.btnPercent.Text = "%";
             this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
             // 
             // btn3
             // 
@@ -168,6 +172,7 @@
             this.btnSquareRoot.TabIndex = 39;
             this.btnSquareRoot.Text = "√";
             this.btnSquareRoot.UseVisualStyleBackColor = true;
+            this.btnSquareRoot.Click += new System.EventHandler(this.btnSquareRoot_Click);
             // 
             // btnMinus
             // 
@@ -178,6 +183,7 @@
             this.btnMinus.TabIndex = 38;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btn6
             // 
@@ -221,6 +227,7 @@
             this.btnDivison.TabIndex = 44;
             this.btnDivison.Text = "÷";
             this.btnDivison.UseVisualStyleBackColor = true;
+            this.btnDivison.Click += new System.EventHandler(this.btnDivison_Click);
             // 
             // btnMultipy
             // 
@@ -231,6 +238,7 @@
             this.btnMultipy.TabIndex = 43;
             this.btnMultipy.Text = "x";
             this.btnMultipy.UseVisualStyleBackColor = true;
+            this.btnMultipy.Click += new System.EventHandler(this.btnMultipy_Click);
             // 
             // btn9
             // 
@@ -274,6 +282,7 @@
             this.btnOnOff.TabIndex = 49;
             this.btnOnOff.Text = "ON/C";
             this.btnOnOff.UseVisualStyleBackColor = true;
+            this.btnOnOff.Click += new System.EventHandler(this.btnOnOff_Click);
             // 
             // btnCE
             // 
@@ -324,6 +333,7 @@
             this.btnPower.TabIndex = 50;
             this.btnPower.Text = "^";
             this.btnPower.UseVisualStyleBackColor = true;
+            this.btnPower.Click += new System.EventHandler(this.btnPower_Click);
             // 
             // CalculatorView
             // 
