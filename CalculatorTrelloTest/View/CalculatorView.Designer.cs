@@ -53,6 +53,7 @@
             this.btnMPlus = new System.Windows.Forms.Button();
             this.btnMMinus = new System.Windows.Forms.Button();
             this.btnMRC = new System.Windows.Forms.Button();
+            this.btnPower = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn0
@@ -97,9 +98,9 @@
             // btnPlus
             // 
             this.btnPlus.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPlus.Location = new System.Drawing.Point(225, 291);
+            this.btnPlus.Location = new System.Drawing.Point(225, 362);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(65, 136);
+            this.btnPlus.Size = new System.Drawing.Size(65, 65);
             this.btnPlus.TabIndex = 28;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -167,7 +168,7 @@
             // btnMinus
             // 
             this.btnMinus.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMinus.Location = new System.Drawing.Point(225, 220);
+            this.btnMinus.Location = new System.Drawing.Point(225, 291);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(65, 65);
             this.btnMinus.TabIndex = 38;
@@ -207,7 +208,7 @@
             // btnDivison
             // 
             this.btnDivison.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDivison.Location = new System.Drawing.Point(296, 149);
+            this.btnDivison.Location = new System.Drawing.Point(225, 149);
             this.btnDivison.Name = "btnDivison";
             this.btnDivison.Size = new System.Drawing.Size(65, 65);
             this.btnDivison.TabIndex = 44;
@@ -217,7 +218,7 @@
             // btnMultipy
             // 
             this.btnMultipy.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMultipy.Location = new System.Drawing.Point(225, 149);
+            this.btnMultipy.Location = new System.Drawing.Point(225, 220);
             this.btnMultipy.Name = "btnMultipy";
             this.btnMultipy.Size = new System.Drawing.Size(65, 65);
             this.btnMultipy.TabIndex = 43;
@@ -304,11 +305,22 @@
             this.btnMRC.Text = "MRC";
             this.btnMRC.UseVisualStyleBackColor = true;
             // 
+            // btnPower
+            // 
+            this.btnPower.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPower.Location = new System.Drawing.Point(296, 149);
+            this.btnPower.Name = "btnPower";
+            this.btnPower.Size = new System.Drawing.Size(65, 65);
+            this.btnPower.TabIndex = 50;
+            this.btnPower.Text = "^";
+            this.btnPower.UseVisualStyleBackColor = true;
+            // 
             // CalculatorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 450);
+            this.Controls.Add(this.btnPower);
             this.Controls.Add(this.btnOnOff);
             this.Controls.Add(this.btnCE);
             this.Controls.Add(this.btnMPlus);
@@ -368,5 +380,6 @@
         private Button btnMPlus;
         private Button btnMMinus;
         private Button btnMRC;
+        private Button btnPower;
     }
 }
