@@ -22,52 +22,42 @@ namespace CalculatorTrelloTest.View
         {
             txtBox.Text += "0";
         }
-
         private void btn1_Click(object sender, EventArgs e)
         {
             txtBox.Text += "1";
         }
-
         private void btn2_Click(object sender, EventArgs e)
         {
             txtBox.Text += "2";
         }
-
         private void btn3_Click(object sender, EventArgs e)
         {
             txtBox.Text += "3";
         }
-
         private void btn4_Click(object sender, EventArgs e)
         {
             txtBox.Text += "4";
         }
-
         private void btn5_Click(object sender, EventArgs e)
         {
             txtBox.Text += "5";
         }
-
         private void btn6_Click(object sender, EventArgs e)
         {
             txtBox.Text += "6";
         }
-
         private void btn7_Click(object sender, EventArgs e)
         {
             txtBox.Text += "7";
         }
-
         private void btn8_Click(object sender, EventArgs e)
         {
             txtBox.Text += "8";
         }
-
         private void btn9_Click(object sender, EventArgs e)
         {
             txtBox.Text += "9";
         }
-
         private void btnSquareRoot_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -77,7 +67,6 @@ namespace CalculatorTrelloTest.View
                 txtBox.Text = squareRoot.ToString();
             }
         }
-
         private void btnPlus_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -88,7 +77,6 @@ namespace CalculatorTrelloTest.View
                 count = 2;
             }
         }
-
         private void btnOnOff_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -96,12 +84,10 @@ namespace CalculatorTrelloTest.View
                 txtBox.Clear();
             }
         }
-
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            compute(count);
+            Compute(count);
         }
-
         private void btnMinus_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -112,7 +98,6 @@ namespace CalculatorTrelloTest.View
                 count = 1;
             }
         }
-
         private void btnMultipy_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -123,7 +108,6 @@ namespace CalculatorTrelloTest.View
                 count = 3;
             }
         }
-
         private void btnDivison_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -134,7 +118,6 @@ namespace CalculatorTrelloTest.View
                 count = 4;
             }
         }
-
         private void btnPercent_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -145,7 +128,6 @@ namespace CalculatorTrelloTest.View
                 count = 5;
             }
         }
-
         private void btnPower_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -156,7 +138,6 @@ namespace CalculatorTrelloTest.View
                 count = 6;
             }
         }
-
         private void btnPlusMinus_Click(object sender, EventArgs e)
         {
             if (txtBox.Text.Length > 0)
@@ -166,8 +147,7 @@ namespace CalculatorTrelloTest.View
                 txtBox.Text = reverseSign.ToString();
             }
         }
-
-        public void compute(int count)
+        public void Compute(int count)
         {
             switch (count)
             {
