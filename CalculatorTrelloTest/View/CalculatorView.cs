@@ -70,23 +70,46 @@ namespace CalculatorTrelloTest.View
 
         private void btnSquareRoot_Click(object sender, EventArgs e)
         {
+              {
             if (txtBox.Text.Length > 0)
             {
-                double squareRoot = double.Parse(txtBox.Text);
-                squareRoot = Math.Sqrt(squareRoot);
-                txtBox.Text = squareRoot.ToString();
+                if (double.TryParse(txtBox.Text, out var x))
+                {
+                    num1 = double.Parse(txtBox.Text);
+                    txtBox.Clear();
+                    txtBox.Focus();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Please use number");
+                        txtBox.Clear();
+                }
             }
+        }
+
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (txtBox.Text.Length > 0)
             {
-                num1 = double.Parse(txtBox.Text);
-                txtBox.Clear();
-                txtBox.Focus();
-                count = 2;
+                if (txtBox.Text.Length > 0)
+                {
+                    if (double.TryParse(txtBox.Text, out var x))
+                    {
+                        num1 = double.Parse(txtBox.Text);
+                        txtBox.Clear();
+                        txtBox.Focus();
+                        count = 2;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please use number");
+                        txtBox.Clear();
+                    }
+                }
             }
+
         }
 
         private void btnOnOff_Click(object sender, EventArgs e)
@@ -116,6 +139,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number");
+                    txtBox.Clear();
                 }
             }
         }
@@ -134,6 +158,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number");
+                    txtBox.Clear();
                 }
             }
         }
@@ -152,6 +177,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number");
+                    txtBox.Clear();
                 }
             }
         }
@@ -170,6 +196,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number");
+                    txtBox.Clear();
                 }
             }
         }
@@ -188,6 +215,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number!");
+                    txtBox.Clear();
                 }
             }
         }
@@ -205,6 +233,7 @@ namespace CalculatorTrelloTest.View
                 else
                 {
                     MessageBox.Show("Please use number");
+                    txtBox.Clear();
                 }
             }
         }
@@ -224,6 +253,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
@@ -238,6 +268,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
@@ -252,6 +283,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
@@ -266,6 +298,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
@@ -280,6 +313,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
@@ -294,6 +328,7 @@ namespace CalculatorTrelloTest.View
                         else
                         {
                             MessageBox.Show("Please use number!");
+                            txtBox.Clear();
                         }
                     }
                     break;
