@@ -307,7 +307,7 @@
             this.Controls.Add(this.txtBox);
             this.Controls.Add(this.btn0);
             this.Name = "CalculatorView";
-            this.Text = "CalculatorView";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
