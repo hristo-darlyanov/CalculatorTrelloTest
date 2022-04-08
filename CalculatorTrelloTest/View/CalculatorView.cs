@@ -70,24 +70,20 @@ namespace CalculatorTrelloTest.View
 
         private void btnSquareRoot_Click(object sender, EventArgs e)
         {
-              {
             if (txtBox.Text.Length > 0)
             {
                 if (double.TryParse(txtBox.Text, out var x))
                 {
                     num1 = double.Parse(txtBox.Text);
-                    txtBox.Clear();
+                    txtBox.Text = Math.Sqrt(num1).ToString();                 
                     txtBox.Focus();
-                    
                 }
                 else
                 {
                     MessageBox.Show("Please use number");
-                        txtBox.Clear();
+                    txtBox.Clear();
                 }
             }
-        }
-
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
